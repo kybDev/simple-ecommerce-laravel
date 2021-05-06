@@ -16,4 +16,9 @@ class ProductController extends Controller
         $this->request = $request;
         $this->product = $product;
     }
+
+    public function home()
+    {
+        return view('website.pages.home');
+    }
 }

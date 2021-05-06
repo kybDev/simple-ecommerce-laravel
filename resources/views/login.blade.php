@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Floating labels example for Bootstrap</title>
+    <title>Login | Farm Fresh</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
 
@@ -47,8 +47,16 @@
 
 
     <style>
+      form{
+        background:white;
+        border-radius: 10px;
+        padding-left:5% !important;
+        padding-right:5% !important;
+      }
       body{
-        background: #82a15d5c;
+        background-image: url('https://media2.giphy.com/media/Jw4SQcBYaTJiPybmsx/giphy.gif?cid=ecf05e47i6lngpy9l7itwdfbg32vy7pm7qdirobclkdnzikw&rid=giphy.gif&ct=g');
+        background-repeat:no-repeat;
+        background-size: cover;
       }
       .btn-primary{
         background: #f6a400;
