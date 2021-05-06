@@ -42,9 +42,19 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2021-2022</p>
     </form>
 
+
+    <style>
+      body{
+        background: #82a15d5c;
+      }
+      .btn-primary{
+        background: #f6a400;
+        border:none;
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   </body>
 </html>
