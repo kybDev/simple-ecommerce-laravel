@@ -20,19 +20,26 @@
   </head>
 
   <body>
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="{{ URL::route('login.verify')}}" >
+      @csrf
       <div class="text-center mb-4">
-        <img class="mb-4" src="https://seeklogo.com/images/F/farm-fresh-logo-784D6B0BEF-seeklogo.com.png" alt="" width="100%">
+        <img class="mb-4" src="https://img.pngio.com/sm-supermalls-sm-supermalls-png-3056_2138.png" alt="" width="100%">
         <h1 class="h3 mb-3 font-weight-normal">Log In to order</h1> 
       </div>
 
+      <div class="m-b-10">
+        @if (session('error'))
+          <p class="text-danger">{{ session('error') }}</p>
+        @endif
+      </div>
+
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputEmail">Email address</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword">Password</label>
       </div>
 

@@ -1,4 +1,3 @@
-
 <!Doctype html>
 <html lang="en">
 <head>
@@ -13,7 +12,6 @@
     @include('website.components.header')
     @yield('body')
     @yield('extraJs')
-
     <style> 
       .btn-primary,
       .btn-primary:hover{
@@ -22,5 +20,6 @@
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-</body>
+
+  </body>
 </html>

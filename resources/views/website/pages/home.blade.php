@@ -6,16 +6,16 @@
           <div class="row"> 
             <div class="col-md-4">
                 <div class="card mb-4 box-shadow"> 
-                    <div id="carouselExampleControls" class="carousel slide"">
+                    <div id="carouselExampleControls" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://3.imimg.com/data3/VE/QY/MY-7539096/white-egg-500x500.jpg" class="d-block w-100">
+                                <img src="https://store.iloilosupermart.com/wp-content/uploads/2020/12/2322-300x300.png" class="d-block w-100">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://3.imimg.com/data3/VE/QY/MY-7539096/white-egg-500x500.jpg" class="d-block w-100">
+                                <img src="https://store.iloilosupermart.com/wp-content/uploads/2020/12/321123-300x300.png" class="d-block w-100">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://3.imimg.com/data3/VE/QY/MY-7539096/white-egg-500x500.jpg" class="d-block w-100">
+                                <img src="https://store.iloilosupermart.com/wp-content/uploads/2020/12/65621-300x300.jpg" class="d-block w-100">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
