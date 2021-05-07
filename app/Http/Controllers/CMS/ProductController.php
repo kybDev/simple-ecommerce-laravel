@@ -17,15 +17,7 @@ class ProductController extends Controller
         $this->product = $product;
     }
 
-    public function index(){
-        return view('cms.pages.products')->with([
-            "data" => $this->product->paginate(5)
-        ]);
-    }
-
-    public function productAdd(){
-        return  view('cms.pages.products_add');
-    }
+    
 
     private function _createFilename($ext){
         return rand(11111, 99999).'_'.strtotime(date('Y-m-d')).'.'.$ext;
@@ -51,6 +43,16 @@ class ProductController extends Controller
             "image2" => $this->_storeImage('file2'),
             "image3" => $this->_storeImage('file3'),
         ])->except('_token', 'file1', 'file2', 'file3');
+    }
+
+    public function index(){
+        return view('cms.pages.products')->with([
+            "data" => $this->product->paginate(5)
+        ]);
+    }
+
+    public function productAdd(){
+        return  view('cms.pages.products_add');
     }
 
     public function productStore(){

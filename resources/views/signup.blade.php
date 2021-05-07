@@ -20,17 +20,32 @@
   </head>
 
   <body>
-    <form class="form-signin" method="POST" action="{{ URL::route('login.verify')}}" >
+    <form class="form-signin" method="POST" action="{{ URL::route('signup.verify')}}" >
       @csrf
       <div class="text-center mb-4">
         <img class="mb-4" src="https://img.pngio.com/sm-supermalls-sm-supermalls-png-3056_2138.png" alt="" width="100%">
-        <h1 class="h3 mb-3 font-weight-normal">Log In to order</h1> 
+        <h1 class="h3 mb-3 font-weight-normal">Signup</h1> 
       </div>
 
       <div class="m-b-10">
         @if (session('error'))
           <p class="text-danger">{{ session('error') }}</p>
         @endif
+      </div>
+
+      <div class="form-label-group">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required autofocus>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="text" name="address" id="address" class="form-control" placeholder="Address" required autofocus>
+        <label for="address">Address</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="text" name="contact" id="contact" class="form-control" placeholder="Contact" required autofocus>
+        <label for="contact">Contact</label>
       </div>
 
       <div class="form-label-group">
@@ -43,17 +58,10 @@
         <label for="inputPassword">Password</label>
       </div>
 
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
       <div style="display: flex;justify-content: space-between;align-items: center;">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <a href="{{ URL::route('signup')}}" type="submit"> Create account.</a>
+        <a href="{{ URL::route('login')}}" >Already have an account</a>
       </div>
-      
-      
       <p class="mt-5 mb-3 text-muted text-center">&copy; 2021-2022</p>
     </form>
 

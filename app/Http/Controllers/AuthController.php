@@ -38,7 +38,10 @@ class AuthController extends Controller
         $isSignup = User::create([
             'name' => $this->request->name,
             'email' => $this->request->email,
-            'password' => bcrypt($this->request->password)
+            'address' => $this->request->address,
+            'contact' => $this->request->contact,
+            'password' => bcrypt($this->request->password),
+            'account_type' => "customer"
         ]);
 
         Auth::loginUsingId($isSignup->id);
@@ -52,4 +55,10 @@ class AuthController extends Controller
 
         return Redirect::route('login');
     }
+
+    public function signup(){
+        return view('signup'); 
+    }
+
+   
 }

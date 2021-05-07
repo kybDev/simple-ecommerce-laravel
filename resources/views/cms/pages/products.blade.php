@@ -14,16 +14,21 @@
                 <th>Category</th>
                 <th>Price</th>
                 <th>Details</th>
+                <th>Images</th>
                 <th></th>
             </tr>
             @foreach ($data as $item)
-
             <tr>
                 <td></td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->category }}</td>
                 <td>{{ $item->price }}</td>
                 <td>{{ $item->details }}</td>
+                <td style="width: 400px">
+                    <img src="{{ URL::asset('storage/'.$item->image1) }}" class="img-thumbnail" width="32%" alt="">
+                    <img src="{{ URL::asset('storage/'.$item->image2) }}" class="img-thumbnail" width="32%" alt="">
+                    <img src="{{ URL::asset('storage/'.$item->image3) }}" class="img-thumbnail" width="32%" alt="">
+                </td>
                 <td style="width: 175px">
                     <a href="{{ URL::route('cms.products.edit', ['id' => $item->id]) }}" class="btn btn-success">Update</a>
                     <a href="{{ URL::route('cms.products.destroy', ['id' => $item->id]) }}" class="btn btn-danger">Delete</a>

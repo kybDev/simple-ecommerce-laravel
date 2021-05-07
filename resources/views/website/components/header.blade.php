@@ -8,7 +8,7 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                <input type="search" name="search" class="form-control" placeholder="Search..." aria-label="Search">
             </form> 
             
             <div class="dropdown text-end">
@@ -16,10 +16,10 @@
                     <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="#">Cart</a></li> 
+                <li><a class="dropdown-item" href="{{ URL::route('cart') }}">Cart</a></li> 
                 <li><a class="dropdown-item" href="#">Orders</a></li> 
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                <li><a class="dropdown-item" href="{{ URL::route('logout') }}">Sign out</a></li>
                 </ul>
             </div>
         </div>
